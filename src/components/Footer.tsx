@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
               MB
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-white tracking-tight">Mahadev Bricks</h3>
-              <p className="text-sm text-stone-400">Since 2005 • Varanasi</p>
+              <h3 className="text-2xl font-bold text-white tracking-tight">Mahadev Bricks Field</h3>
+              <p className="text-sm text-stone-400">Since 2005 • Barabanki</p>
             </div>
           </div>
           <p className="text-stone-400 leading-relaxed">
@@ -57,8 +57,8 @@ const Footer: React.FC = () => {
             <li className="flex items-start gap-3">
               <span className="text-orange-500 text-xl">📍</span>
               <p>
-                रामनगर, लहरतारा,<br />
-                वाराणसी, उत्तर प्रदेश 221105
+                गंगा गुंज रोड, भानमऊ,<br />
+                उत्तर प्रदेश 225121
               </p>
             </li>
             <li className="flex items-start gap-3">
