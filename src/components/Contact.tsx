@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-stone-50">
+    <section id="contact" className="py-12 md:py-16 bg-stone-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="inline-block px-5 py-2 bg-orange-100 text-orange-700 font-medium rounded-full text-sm uppercase tracking-wide">
@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-5 py-4 border border-stone-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition"
-                    placeholder="जितेंद्र कुमार"
+                    placeholder="रमेश कुमार"
                   />
                 </div>
 
@@ -160,8 +160,8 @@ const Contact: React.FC = () => {
                   <div>
                     <p className="font-medium text-stone-700">पता</p>
                     <p className="text-stone-600">
-                      महादेव ब्रिक्स इंडस्ट्रीज<br />
-                      रामनगर, लहरतारा, वाराणसी, उत्तर प्रदेश 221105
+                      महादेव ब्रिक्स फील्ड <br />
+                      गंगा गुंज रोड, भानमऊ, उत्तर प्रदेश 225121
                     </p>
                   </div>
                 </div>

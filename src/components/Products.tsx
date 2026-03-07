@@ -33,7 +33,7 @@ const Products: React.FC = () => {
   ];
 
   return (
-    <section id="products" className="py-20 md:py-32 bg-stone-50">
+    <section id="products" className="py-12 md:py-16 bg-stone-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="inline-block px-5 py-2 bg-orange-100 text-orange-700 font-medium rounded-full text-sm uppercase tracking-wide">

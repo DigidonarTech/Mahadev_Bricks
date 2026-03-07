@@ -1,38 +1,35 @@
 // src/components/Hero.tsx
 import React, { useState, useEffect } from 'react';
 
-// Apne images import kar le (src/assets/ folder mein rakhna)
-// Agar Vite use kar raha hai to import karna best hai
-import img1 from '../assets/factory.jpg';  // pehli image
-import img2 from '../assets/img2.jpg';  // jo tune pehle use ki thi
-import img3 from '../assets/img3.jpg';  // teesri image (tu daal dena)
+import img1 from '../assets/factory.jpg';
+import img2 from '../assets/img2.jpg'; 
+import img3 from '../assets/img3.jpg';
 
 interface HeroProps {
   onScrollTo: (section: string) => void;
 }
 
 const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
-  // Images array – yahan aur images add kar sakta hai
+ 
   const images = [img1, img2, img3];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto slide logic – har 5 seconds mein next image
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // 5000ms = 5 seconds – change kar sakta hai
+    }, 3000); 
 
-    // Cleanup interval jab component unmount ho
+    
     return () => clearInterval(interval);
-  }, [images.length]); // images.length pe depend karega
+  }, [images.length]);
 
   return (
     <section
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Background Images with Fade Transition */}
       {images.map((img, index) => (
         <div
           key={index}
@@ -41,12 +38,10 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
           }`}
           style={{ backgroundImage: `url(${img})` }}
         >
-          {/* Light overlay – dark mat karne ke liye */}
           <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/30 to-white/50" />
         </div>
       ))}
 
-      {/* Content – same as before, z-10 pe rahega */}
       <div className="relative z-10 text-center px-6 max-w-5xl">
         <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-md px-6 py-3 rounded-full mb-8 shadow-md">
           <span className="text-orange-600 font-bold text-xl">MB</span>
@@ -76,8 +71,7 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
           </button>
         </div>
       </div>
-
-      {/* Scroll indicator */}
+      
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-stone-600 text-sm tracking-wider">
         <span>नीचे स्क्रॉल करें</span>
         <div className="w-px h-12 bg-stone-400 mt-3 animate-bounce" />
