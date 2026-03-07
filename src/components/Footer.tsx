@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
           <div className="mt-8 pt-8 border-t border-stone-700 text-sm text-stone-500">
             <p>© {new Date().getFullYear()} Mahadev Bricks. All rights reserved.</p>
             <p className="mt-2">
-              Designed with ❤️ in Varanasi
+              Designed with ❤️ in Barabanki.
             </p>
           </div>
         </div>
