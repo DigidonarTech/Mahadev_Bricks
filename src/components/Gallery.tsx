@@ -1,36 +1,42 @@
 // src/components/Gallery.tsx
 import React from 'react';
+import img1 from '../assets/bricks.jpg';
+import img2 from '../assets/img3.jpg';
+import img3 from '../assets/worker.jpg';
+import img4 from '../assets/bricks.jpg';
+import img5 from '../assets/factory.jpg';
+import img6 from '../assets/factory1.jpg';
 
 
 const Gallery: React.FC = () => {
   const galleryItems = [
     {
-      image: "",
+      image: img1,
       title: "लाल मिट्टी की ईंटों का ढेर",
       description: "उच्च गुणवत्ता वाली रेड क्ले ब्रिक्स तैयार स्टॉक में",
     },
     {
-      image: "",
-      title: "फ्लाई ऐश ब्रिक्स उत्पादन",
+      image: img2,
+      title: "फ्लाई ऐश ब्रिक्स उत्पदन",
       description: "पर्यावरण अनुकूल फ्लाई ऐश ब्रिक्स का बैच",
     },
     {
-      image: "",
+      image: img3,
       title: "खोखली ईंटें (Hollow Bricks)",
       description: "हल्की लेकिन मजबूत खोखली ईंटें निर्माण साइट पर",
     },
     {
-      image: "",
+      image: img4,
       title: "पेवर ब्लॉक पैटर्न",
       description: "आकर्षक पेवर ब्लॉक डिजाइन – पार्किंग और गार्डन के लिए",
     },
     {
-      image: "",
+      image: img5,
       title: "उत्पादन इकाई का दृश्य",
       description: "हमारी आधुनिक ब्रिक मैन्युफैक्चरिंग मशीनरी",
     },
     {
-      image: "",
+      image: img6,
       title: "स्टैक्ड ब्रिक्स वेयरहाउस",
       description: "संगठित तरीके से स्टोर की गई ईंटें",
     },

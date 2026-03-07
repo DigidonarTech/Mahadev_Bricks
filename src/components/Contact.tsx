@@ -1,4 +1,3 @@
-// src/components/Contact.tsx
 import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
@@ -18,7 +17,6 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // WhatsApp message format (Varanasi style – Hindi + details)
     const whatsappMessage = encodeURIComponent(
       `*नया Enquiry - Mahadev Bricks*\n\n` +
       `नाम: ${formData.name}\n` +
@@ -28,7 +26,7 @@ const Contact: React.FC = () => {
       `कृपया जल्दी कॉल बैक करें!`
     );
 
-    const whatsappNumber = "919876543210"; // <-- Yahan apna real WhatsApp business number daal dena (with country code, no + or -)
+    const whatsappNumber = "919984678333";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
     // Open WhatsApp
@@ -153,7 +151,7 @@ const Contact: React.FC = () => {
                   <div className="text-3xl text-orange-600">📞</div>
                   <div>
                     <p className="font-medium text-stone-700">मोबाइल / WhatsApp</p>
-                    <a href="tel:+919876543210" className="text-orange-600 hover:underline">+91 98765 43210</a>
+                    <a href="tel:+91998467833" className="text-orange-600 hover:underline">+91 998467833</a>
                   </div>
                 </div>
 
@@ -178,11 +176,10 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Optional Google Maps Embed – tune agar Google Maps link hai toh iframe daal dena */}
             <div className="rounded-3xl overflow-hidden shadow-xl border border-stone-100 h-80">
-              {/* Placeholder – real map embed kar sakta hai */}
+      
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.123456789!2d82.987654321!3d25.345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDIwJzQ0LjQiTiA4MsKwNTknMTUuNiJF!5e0!3m2!1sen!2sin!4v1698765432100" // <-- yahan real embed code daal dena
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.8347325267778!2d81.14473327521378!3d26.621743676821808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be955c18ab287%3A0x745efc66e77c33c7!2sMahadev%20Brick%20Field%20II%20Red%20Brick%20II%20Brick%20Near%20Me%20II%20Brick%20In%20Barabanki%20II%20Brick%20in%20Lucknow!5e0!3m2!1sen!2sin!4v1772800164146!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -200,3 +197,6 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+
+
+

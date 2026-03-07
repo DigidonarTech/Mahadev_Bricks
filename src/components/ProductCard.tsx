@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 interface ProductCardProps {
   title: string;         
   description: string;       
-  image: string;              
-  price: string;              
+  image: string;                           
   onQuote?: () => void;       
 }
 
@@ -14,7 +13,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
   title,
   description,
   image,
-  price,
   onQuote,
 }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -42,19 +40,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <p className="text-stone-600 text-sm leading-relaxed mb-6 flex-grow line-clamp-4">
           {description}
         </p>
-
-        {/* Price + Button */}
-        <div className="flex items-center justify-between mt-auto">
-          <span className="text-orange-600 font-bold text-xl">{price}</span>
-          <button
-            onClick={onQuote}
-            className="px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-xl transition-all duration-300 active:scale-95 shadow-md hover:shadow-lg"
-          >
-            Quote लें
-          </button>
         </div>
       </div>
-    </div>
   );
 };
 

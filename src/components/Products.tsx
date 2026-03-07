@@ -13,25 +13,22 @@ const Products: React.FC = () => {
       title: "Red Clay Bricks (लाल ईंट)",
       description: "उच्च गुणवत्ता वाली पारंपरिक लाल मिट्टी की ईंटें। मजबूत, टिकाऊ और मौसम प्रतिरोधी। निर्माण के लिए आदर्श।",
       image: img2,
-      price: "₹8-10 / पीस",
     },
     {
       title: "Fly Ash Bricks (फ्लाई ऐश ब्रिक्स)",
       description: "पर्यावरण अनुकूल, हल्की लेकिन मजबूत। सीमेंट प्लांट से बनी, बेहतर इंसुलेशन और कम पानी सोखती हैं।",
       image: img3,
-      price: "₹6-8 / पीस",
+      
     },
     {
       title: "Hollow Bricks (खोखली ईंट)",
       description: "वजन में हल्की, थर्मल इंसुलेशन बेहतर। बड़े प्रोजेक्ट्स और दीवारों के लिए इस्तेमाल होती हैं।",
       image: img4,
-      price: "₹12-15 / पीस",
     },
     {
       title: "Paver Blocks (पेवर ब्लॉक)",
       description: "फुटपाथ, पार्किंग, गार्डन के लिए मजबूत और आकर्षक ब्लॉक। विभिन्न डिजाइन और रंग उपलब्ध।",
       image: img5,
-      price: "₹40-60 / sq.ft",
     },
   ];
 
@@ -58,7 +55,7 @@ const Products: React.FC = () => {
               title={product.title}
               description={product.description}
               image={product.image} 
-              price={product.price}
+              
             />
           ))}
         </div>

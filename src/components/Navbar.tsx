@@ -28,8 +28,8 @@ const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
             MB
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-stone-800 tracking-tight">Mahadev Bricks</h1>
-            <p className="text-xs text-stone-500 tracking-wider">Since 2005 • Varanasi</p>
+            <h1 className="text-2xl font-bold text-stone-800 tracking-tight">Mahadev Bricks Field</h1>
+            <p className="text-xs text-stone-500 tracking-wider">Since 2005 • Barabanki</p>
           </div>
         </div>
 
