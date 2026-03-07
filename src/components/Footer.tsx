@@ -1,18 +1,18 @@
-// src/components/Footer.tsx
+
 import React from 'react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-stone-900 text-stone-300 py-12">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
-        {/* Column 1: Logo + Description */}
+        
         <div className="space-y-6">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center text-white font-black text-3xl shadow-md">
               MB
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-white tracking-tight">Mahadev Bricks Field</h3>
+              <h3 className="text-2xl font-bold text-orange-500 tracking-tight">Mahadev Bricks Field</h3>
               <p className="text-sm text-stone-400">Since 2005 • Barabanki</p>
             </div>
           </div>
@@ -20,10 +20,8 @@ const Footer: React.FC = () => {
             मजबूत ईंटें, मजबूत निर्माण। हम उच्च गुणवत्ता वाली ईंटें और निर्माण सामग्री प्रदान करते हैं जो पीढ़ियों तक टिकती हैं।
           </p>
         </div>
-
-        {/* Column 2: Quick Links */}
         <div>
-          <h4 className="text-lg font-semibold text-white mb-6">Quick Links</h4>
+          <h4 className="text-lg font-semibold text-orange-500 mb-6">Quick Links</h4>
           <ul className="space-y-4 text-stone-400">
             <li>
               <a href="#home" className="hover:text-orange-500 transition-colors">Home</a>
@@ -43,9 +41,8 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Column 3: Contact Info */}
         <div>
-          <h4 className="text-lg font-semibold text-white mb-6">Contact Us</h4>
+          <h4 className="text-lg font-semibold text-orange-500 mb-6">Contact Us</h4>
           <ul className="space-y-4 text-stone-400">
             <li className="flex items-start gap-3">
               <span className="text-orange-500 text-xl">📞</span>
@@ -68,11 +65,11 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Column 4: Social + Copyright */}
+ 
         <div className="space-y-6">
-          <h4 className="text-lg font-semibold text-white mb-6">Follow Us</h4>
+          <h4 className="text-lg font-semibold text-orange-500 mb-6">Follow Us</h4>
           <div className="flex gap-5">
-            {/* Icons – real links daal dena */}
+     
             <a href="#" className="text-2xl hover:text-orange-500 transition-colors">Facebook</a>
             <a href="#" className="text-2xl hover:text-orange-500 transition-colors">Instagram</a>
             <a href="#" className="text-2xl hover:text-orange-500 transition-colors">WhatsApp</a>
