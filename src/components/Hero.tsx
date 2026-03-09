@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 4000);
 
 
     return () => clearInterval(interval);
@@ -33,11 +33,11 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
       {images.map((images, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           style={{ backgroundImage: `url(${images.img})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/30 to-white/50" />
+          <div className="absolute inset-0 bg-[#EA580C]/20" />
         </div>
       ))}
 
@@ -47,7 +47,7 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
           MAHADEV BRICK FIELD
         </h1>
 
-        <p className="text-xl md:text-3xl text-stone-700 font-medium mb-12 max-w-4xl mx-auto">
+        <p className="text-xl md:text-3xl text-white font-semibold mb-12 max-w-4xl mx-auto [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
           मजबूत ईंटें • मजबूत निर्माण • गुणवत्ता जो पीढ़ियों तक टिके
         </p>
 
