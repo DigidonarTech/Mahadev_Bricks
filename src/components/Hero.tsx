@@ -8,7 +8,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
 
   const images = [
-    { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034252/factory_ohigse.jpg" },
+    { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773054138/WhatsApp_Image_2026-03-09_at_4.27.38_PM_-_Edited.jpg_ytwmja.jpg" },
     { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg" },
     { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img3_dwq35v.jpg" }
   ];
@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000);
+    }, 3000);
 
 
     return () => clearInterval(interval);
@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
             }`}
           style={{ backgroundImage: `url(${images.img})` }}
         >
-          <div className="absolute inset-0 bg-[#EA580C]/20" />
+          <div className="absolute inset-0 bg-[#EA580C]/2" />
         </div>
       ))}
 
