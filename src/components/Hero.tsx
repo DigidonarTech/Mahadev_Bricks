@@ -6,12 +6,12 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
- 
-const images = [
-  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034252/factory_ohigse.jpg" },
-  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg" },
-  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img3_dwq35v.jpg" }
-];
+
+  const images = [
+    { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034252/factory_ohigse.jpg" },
+    { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg" },
+    { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img3_dwq35v.jpg" }
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -19,9 +19,9 @@ const images = [
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); 
+    }, 3000);
 
-    
+
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -33,9 +33,8 @@ const images = [
       {images.map((images, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'
+            }`}
           style={{ backgroundImage: `url(${images.img})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/30 to-white/50" />
@@ -43,8 +42,8 @@ const images = [
       ))}
 
       <div className="relative z-10 text-center px-6 max-w-5xl">
-        
-        <h1 className="text-5xl md:text-7xl font-black text-stone-800 tracking-tight leading-none mb-6 drop-shadow-lg">
+
+        <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight leading-none mb-6 [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
           MAHADEV BRICK FIELD
         </h1>
 
@@ -72,7 +71,7 @@ const images = [
           </button>
         </div>
       </div>
-      
+
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-stone-600 text-sm tracking-wider">
         <span>नीचे स्क्रॉल करें</span>
         <div className="w-px h-12 bg-stone-400 mt-3 animate-bounce" />
