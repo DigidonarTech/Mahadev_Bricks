@@ -25,7 +25,7 @@ function App() {
     <div className="min-h-screen bg-stone-50 font-sans">
       <Navbar onScrollTo={scrollToSection} />
       <Hero onScrollTo={scrollToSection} />
-      <About years={19} bricksProduced="2 करोड़+" projects="500+"/>
+      <About/>
       <Products />
       <Gallery />
       <Contact />
