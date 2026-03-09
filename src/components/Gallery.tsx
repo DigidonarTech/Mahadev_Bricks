@@ -1,45 +1,61 @@
 // src/components/Gallery.tsx
 import React from 'react';
-import img1 from '../assets/bricks.jpg';
-import img2 from '../assets/img3.jpg';
-import img3 from '../assets/worker.jpg';
-import img4 from '../assets/bricks.jpg';
-import img5 from '../assets/factory.jpg';
-import img6 from '../assets/factory1.jpg';
+
+const Images = {
+  img1: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034092/WhatsApp_Image_2026-03-09_at_10.25.16_AM_jeqqd7.jpg",
+  img2: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg",
+  img3: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034252/bricks_kymspn.jpg",
+  img4: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034205/worker_fuor3c.jpg",
+  img5: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773036255/imhes_ayfb1j.avif",
+  img6: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg",
+  img7: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773036829/long-lasting-solid-red-coal-bricks-for-construction-804_mc4ifb.jpg",
+  img8: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773036830/369741535_666178662241323_178891315163332523_n_vhxlyp.jpg",
+};
+
 
 
 const Gallery: React.FC = () => {
   const galleryItems = [
     {
-      image: img1,
+      image: Images.img1,
       title: "लाल मिट्टी की ईंटों का ढेर",
       description: "उच्च गुणवत्ता वाली रेड क्ले ब्रिक्स तैयार स्टॉक में",
     },
     {
-      image: img2,
+      image: Images.img2,
       title: "फ्लाई ऐश ब्रिक्स उत्पदन",
       description: "पर्यावरण अनुकूल फ्लाई ऐश ब्रिक्स का बैच",
     },
     {
-      image: img3,
+      image: Images.img3,
       title: "खोखली ईंटें (Hollow Bricks)",
       description: "हल्की लेकिन मजबूत खोखली ईंटें निर्माण साइट पर",
     },
     {
-      image: img4,
+      image: Images.img4,
       title: "पेवर ब्लॉक पैटर्न",
       description: "आकर्षक पेवर ब्लॉक डिजाइन – पार्किंग और गार्डन के लिए",
     },
     {
-      image: img5,
+      image: Images.img5,
       title: "उत्पादन इकाई का दृश्य",
       description: "हमारी आधुनिक ब्रिक मैन्युफैक्चरिंग मशीनरी",
     },
     {
-      image: img6,
+      image: Images.img6,
       title: "स्टैक्ड ब्रिक्स वेयरहाउस",
       description: "संगठित तरीके से स्टोर की गई ईंटें",
     },
+    {
+      image: Images.img7,
+      title: "निर्माण स्थल पर ईंटें",
+      description: "उच्च गुणवत्ता वाली ईंटें निर्माण स्थल पर",
+    },
+    {
+      image: Images.img8,
+      title: "उत्पादन लाइन",
+      description: "हमारी उत्पादन लाइन पर ईंटें बन रही हैं",
+    }
     // 4-8 items aur add kar sakta hai
   ];
 

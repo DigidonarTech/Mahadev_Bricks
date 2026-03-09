@@ -1,10 +1,11 @@
-// src/components/Products.tsx
-import React from 'react';
-import ProductCard from './ProductCard';
-import img2 from '../assets/board.jpg';
-import img3 from '../assets/factory.jpg';
-import img4 from '../assets/factory1.jpg';
-import img5 from '../assets/img2.jpg';
+import ProductCard from "./ProductCard";
+
+const Images = {
+  img2: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034874/board_edutwg.jpg",
+  img3: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034093/WhatsApp_Image_2026-03-09_at_10.25.15_AM_atp7cv.jpg",
+  img4: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034943/factory1_nxp5qo.jpg",
+  img5: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg",
+};
 
 const Products: React.FC = () => {
  
@@ -12,23 +13,23 @@ const Products: React.FC = () => {
     {
       title: "Red Clay Bricks (लाल ईंट)",
       description: "उच्च गुणवत्ता वाली पारंपरिक लाल मिट्टी की ईंटें। मजबूत, टिकाऊ और मौसम प्रतिरोधी। निर्माण के लिए आदर्श।",
-      image: img2,
+      image: Images.img2,
     },
     {
       title: "Fly Ash Bricks (फ्लाई ऐश ब्रिक्स)",
       description: "पर्यावरण अनुकूल, हल्की लेकिन मजबूत। सीमेंट प्लांट से बनी, बेहतर इंसुलेशन और कम पानी सोखती हैं।",
-      image: img3,
+      image: Images.img3,
       
     },
     {
       title: "Hollow Bricks (खोखली ईंट)",
       description: "वजन में हल्की, थर्मल इंसुलेशन बेहतर। बड़े प्रोजेक्ट्स और दीवारों के लिए इस्तेमाल होती हैं।",
-      image: img4,
+      image: Images.img4,
     },
     {
       title: "Paver Blocks (पेवर ब्लॉक)",
       description: "फुटपाथ, पार्किंग, गार्डन के लिए मजबूत और आकर्षक ब्लॉक। विभिन्न डिजाइन और रंग उपलब्ध।",
-      image: img5,
+      image: Images.img5,
     },
   ];
 

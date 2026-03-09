@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
       `कृपया जल्दी कॉल बैक करें!`
     );
 
-    const whatsappNumber = "919984678333";
+    const whatsappNumber = "918429345535";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
     // Open WhatsApp
@@ -151,7 +151,7 @@ const Contact: React.FC = () => {
                   <div className="text-3xl text-orange-600">📞</div>
                   <div>
                     <p className="font-medium text-stone-700">मोबाइल / WhatsApp</p>
-                    <a href="tel:+91998467833" className="text-orange-600 hover:underline">+91 998467833</a>
+                    <a href="tel:+918429345535" className="text-orange-600 hover:underline">+91 8429345535</a>
                   </div>
                 </div>
 
@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
                     <p className="font-medium text-stone-700">पता</p>
                     <p className="text-stone-600">
                       महादेव ब्रिक्स फील्ड <br />
-                      गंगा गुंज रोड, भानमऊ, उत्तर प्रदेश 225121
+                      गंगा गंज  रोड, भानमऊ, उत्तर प्रदेश 225121
                     </p>
                   </div>
                 </div>

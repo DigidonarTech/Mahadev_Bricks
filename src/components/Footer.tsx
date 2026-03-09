@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
               MB
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-orange-500 tracking-tight">Mahadev Bricks Field</h3>
-              <p className="text-sm text-stone-400">Since 2005 • Barabanki</p>
+              <h3 className="text-2xl font-bold text-orange-500 tracking-tight">Mahadev Brick Field</h3>
+              <p className="text-sm text-stone-400">Since 1993 • Barabanki</p>
             </div>
           </div>
           <p className="text-stone-400 leading-relaxed">
@@ -47,14 +47,14 @@ const Footer: React.FC = () => {
             <li className="flex items-start gap-3">
               <span className="text-orange-500 text-xl">📞</span>
               <div>
-                <p>+91 98765 43210</p>
+                <p>+91 8429345535</p>
                 <p className="text-sm">(WhatsApp Available)</p>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-orange-500 text-xl">📍</span>
               <p>
-                गंगा गुंज रोड, भानमऊ,<br />
+                गंगा गंज  रोड, भानमऊ,<br />
                 उत्तर प्रदेश 225121
               </p>
             </li>
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="mt-8 pt-8 border-t border-stone-700 text-sm text-stone-500">
-            <p>© {new Date().getFullYear()} Mahadev Bricks. All rights reserved.</p>
+            <p>© 1993 Mahadev Brick Field. All rights reserved.</p>
             <p className="mt-2">
               Designed with ❤️ in Barabanki.
             </p>

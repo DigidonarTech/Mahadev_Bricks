@@ -1,17 +1,17 @@
 // src/components/Hero.tsx
 import React, { useState, useEffect } from 'react';
 
-import img1 from '../assets/factory.jpg';
-import img2 from '../assets/img2.jpg'; 
-import img3 from '../assets/img3.jpg';
-
 interface HeroProps {
   onScrollTo: (section: string) => void;
 }
 
 const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
  
-  const images = [img1, img2, img3];
+const images = [
+  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034252/factory_ohigse.jpg" },
+  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg" },
+  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img3_dwq35v.jpg" }
+];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,13 +30,13 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {images.map((img, index) => (
+      {images.map((images, index) => (
         <div
           key={index}
           className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? 'opacity-100' : 'opacity-0'
           }`}
-          style={{ backgroundImage: `url(${img})` }}
+          style={{ backgroundImage: `url(${images.img})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/30 to-white/50" />
         </div>
@@ -45,11 +45,11 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
       <div className="relative z-10 text-center px-6 max-w-5xl">
         <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-md px-6 py-3 rounded-full mb-8 shadow-md">
           <span className="text-orange-600 font-bold text-xl">MB</span>
-          <span className="text-stone-700 font-medium">Barabanki • Since 2005</span>
+          <span className="text-stone-700 font-medium">Barabanki • Since 1993</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-black text-stone-800 tracking-tight leading-none mb-6 drop-shadow-lg">
-          MAHADEV BRICKS FIELD
+          MAHADEV BRICK FIELD
         </h1>
 
         <p className="text-xl md:text-3xl text-stone-700 font-medium mb-12 max-w-4xl mx-auto">
