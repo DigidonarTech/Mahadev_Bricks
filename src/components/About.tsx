@@ -12,7 +12,7 @@ const About: React.FC<AboutProps> = ({
   years = 19,
   bricksProduced = "2 करोड़+",
   projects = "500+",
-  factoryImage = "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034092/WhatsApp_Image_2026-03-09_at_10.25.16_AM_jeqqd7.jpg",
+  factoryImage = "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034092/WhatsApp_Image_2026-03-09_at_10.25.16_AM_jeqqd7.jpg",
 }) => {
   return (
     <section id="about" className="py-10 md:py-28 bg-white">

@@ -1,10 +1,10 @@
 import ProductCard from "./ProductCard";
 
 const Images = {
-  img2: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034874/board_edutwg.jpg",
-  img3: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034093/WhatsApp_Image_2026-03-09_at_10.25.15_AM_atp7cv.jpg",
-  img4: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034943/factory1_nxp5qo.jpg",
-  img5: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg",
+  img2: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034874/board_edutwg.jpg",
+  img3: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034093/WhatsApp_Image_2026-03-09_at_10.25.15_AM_atp7cv.jpg",
+  img4: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034943/factory1_nxp5qo.jpg",
+  img5: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg",
 };
 
 const Products: React.FC = () => {

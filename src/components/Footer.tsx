@@ -8,9 +8,10 @@ const Footer: React.FC = () => {
         
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center text-white font-black text-3xl shadow-md">
-              MB
-            </div>
+                      <div className="w-16 h-10 bg-orange-600 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-md">
+            MBF
+          </div>
+
             <div>
               <h3 className="text-2xl font-bold text-orange-500 tracking-tight">Mahadev Brick Field</h3>
               <p className="text-sm text-stone-400">Since 1993 • Barabanki</p>

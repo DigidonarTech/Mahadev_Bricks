@@ -24,8 +24,8 @@ const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
           className="flex items-center gap-3 cursor-pointer" 
           onClick={() => onScrollTo('home')}
         >
-          <div className="w-10 h-10 bg-orange-600 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-md">
-            MB
+          <div className="w-16 h-10 bg-orange-600 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-md">
+            MBF
           </div>
           <div>
             <h1 className="text-2xl font-bold text-stone-800 tracking-tight">Mahadev Brick Field</h1>

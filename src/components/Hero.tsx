@@ -8,9 +8,9 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
  
 const images = [
-  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034252/factory_ohigse.jpg" },
-  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg" },
-  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img3_dwq35v.jpg" }
+  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034252/factory_ohigse.jpg" },
+  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg" },
+  { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img3_dwq35v.jpg" }
 ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,11 +43,7 @@ const images = [
       ))}
 
       <div className="relative z-10 text-center px-6 max-w-5xl">
-        <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-md px-6 py-3 rounded-full mb-8 shadow-md">
-          <span className="text-orange-600 font-bold text-xl">MB</span>
-          <span className="text-stone-700 font-medium">Barabanki • Since 1993</span>
-        </div>
-
+        
         <h1 className="text-5xl md:text-7xl font-black text-stone-800 tracking-tight leading-none mb-6 drop-shadow-lg">
           MAHADEV BRICK FIELD
         </h1>
@@ -55,6 +51,11 @@ const images = [
         <p className="text-xl md:text-3xl text-stone-700 font-medium mb-12 max-w-4xl mx-auto">
           मजबूत ईंटें • मजबूत निर्माण • गुणवत्ता जो पीढ़ियों तक टिके
         </p>
+
+        <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-md px-6 py-3 rounded-full mb-8 shadow-md">
+          <span className="text-orange-600 font-bold text-xl">MBF</span>
+          <span className="text-stone-700 font-medium">Barabanki • Since 1993</span>
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <button

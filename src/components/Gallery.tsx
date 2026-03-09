@@ -2,14 +2,14 @@
 import React from 'react';
 
 const Images = {
-  img1: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034092/WhatsApp_Image_2026-03-09_at_10.25.16_AM_jeqqd7.jpg",
-  img2: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg",
-  img3: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034252/bricks_kymspn.jpg",
-  img4: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034205/worker_fuor3c.jpg",
-  img5: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773036255/imhes_ayfb1j.avif",
-  img6: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034255/img2_q2mlhp.jpg",
-  img7: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773036829/long-lasting-solid-red-coal-bricks-for-construction-804_mc4ifb.jpg",
-  img8: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773036830/369741535_666178662241323_178891315163332523_n_vhxlyp.jpg",
+  img1: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034092/WhatsApp_Image_2026-03-09_at_10.25.16_AM_jeqqd7.jpg",
+  img2: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg",
+  img3: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034252/bricks_kymspn.jpg",
+  img4: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034205/worker_fuor3c.jpg",
+  img5: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773036255/imhes_ayfb1j.avif",
+  img6: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg",
+  img7: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773036829/long-lasting-solid-red-coal-bricks-for-construction-804_mc4ifb.jpg",
+  img8: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773036830/369741535_666178662241323_178891315163332523_n_vhxlyp.jpg",
 };
 
 
