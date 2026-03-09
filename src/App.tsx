@@ -7,6 +7,7 @@ import Products from './components/Products';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CallButton from "./components/CallButton";
 
 function App() {
   const scrollToSection = (id: string) => {
@@ -29,6 +30,7 @@ function App() {
       <Gallery />
       <Contact />
       <Footer />
+      <CallButton />
     </div>
   );
 }
