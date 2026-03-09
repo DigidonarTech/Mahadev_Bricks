@@ -9,7 +9,7 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = ({
-  years = 19,
+  years = "33",
   bricksProduced = "2 करोड़+",
   projects = "500+",
   factoryImage = "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034092/WhatsApp_Image_2026-03-09_at_10.25.16_AM_jeqqd7.jpg",
@@ -94,7 +94,7 @@ const About: React.FC<AboutProps> = ({
             हमारी आधुनिक ईंट उत्पादन इकाई
           </div>
         </div>
-
+        
       </div>
     </section>
   );
