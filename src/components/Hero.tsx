@@ -8,7 +8,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
 
   const images = [
-    { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773054138/WhatsApp_Image_2026-03-09_at_4.27.38_PM_-_Edited.jpg_ytwmja.jpg" },
+    { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/v1773034252/factory_ohigse.jpg" },
     { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img2_q2mlhp.jpg" },
     { img: "https://res.cloudinary.com/ddc7x60nm/image/upload/f_auto,q_auto,w_800/v1773034255/img3_dwq35v.jpg" }
   ];
@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-start justify-center pt-28 relative overflow-hidden"
     >
       {images.map((images, index) => (
         <div
@@ -37,21 +37,21 @@ const Hero: React.FC<HeroProps> = ({ onScrollTo }) => {
             }`}
           style={{ backgroundImage: `url(${images.img})` }}
         >
-          <div className="absolute inset-0 bg-[#EA580C]/2" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         </div>
       ))}
 
-      <div className="relative z-10 text-center px-6 max-w-5xl">
+      <div className="relative z-10 text-center px-6 max-w-6xl">
 
-        <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight leading-none mb-6 [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-tight mb-6 text-center drop-shadow-2xl">
           MAHADEV BRICK FIELD
         </h1>
 
-        <p className="text-xl md:text-3xl text-white font-semibold mb-12 max-w-4xl mx-auto [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
+        <p className="text-xl md:text-3xl lg:text-4xl text-white font-semibold mb-12 max-w-5xl mx-auto text-center drop-shadow-xl">
           मजबूत ईंटें • मजबूत निर्माण • गुणवत्ता जो पीढ़ियों तक टिके
         </p>
 
-        <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-md px-6 py-3 rounded-full mb-8 shadow-md">
+        <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-md px-6 py-4 rounded-full  mt-6 mb-8 shadow-md">
           <span className="text-orange-600 font-bold text-xl">MBF</span>
           <span className="text-stone-700 font-medium">Barabanki • Since 1993</span>
         </div>
